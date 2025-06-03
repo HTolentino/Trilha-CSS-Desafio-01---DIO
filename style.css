@@ -1,0 +1,155 @@
+/* reset css */
+*{
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: black; /*cor do fundo*/
+}
+
+h2 {
+    font-size: 30px;
+    color: #33A8DB;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+p {
+    color: white;
+}
+
+section {
+    margin: 100px auto;
+}
+
+.banner{ /*mexendo na classe banner*/
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(assets/images/banner.png); /*cria um efeito gradiente preto em cima, azul no meio e preto em baixo depois coloca uma imagem*/
+    background-size: cover; /*para a imagem cobrir tudo*/
+    background-repeat: no-repeat; /*para a imagem não repetir*/
+    height: 600px; /*a classe banner vai ter essa altura fixa*/
+    padding-top: 60px; /*distancia das bordas da página, para não ficar muito colada*/
+    border-bottom: 1px solid #33A8DB80; /*cria uma linha fina*/
+}
+
+.banner .banner-content{ /*mexendo na classe banner-content que está dentro da classe banner*/
+    color: white;/*define a cor dos textos*/
+    width: 600px;/*define a lasgura dessa classe*/
+    margin: auto;/*define as margens de forma automática*/
+    text-align: center;/*alinha tudo no centro*/
+}
+
+.banner h1 {
+    font-size: 37px;/*tamanho da fonte*/
+    font-weight: 900;/*largunra da letra*/
+    text-transform: uppercase; /*coloca o texto todo em maiúscula*/
+    color: transparent;/*deixa a cor do texto transparente para poder aplicar o efeito degradê*/
+    background: linear-gradient(#33A8DB, #1472B7);/*faz um fundo efeito degradê de cima para baixo com duas cores*/
+    background-clip: text;/*faz o fundo degradê ser do tamanho das letras*/
+}
+
+.banner p {
+    font-size: 19px;
+    margin: 16px 0 24px;/*define a margem em cima e em baixo para não ficar colado nas outras coisas*/
+}
+
+.banner .logo{
+    background-color: rgba(0, 0, 0, .2); /*coloca um fundo na imagem que é a logo*/
+    height: 260px; /*define a largura desse fundo*/
+    width: 260px; /*define a altura desse fundo*/
+    margin: auto;/*define a margem de forma automática*/
+    border-radius: 50%; /*arredonda as bordas do fundo*/
+    padding: 16px;
+    margin-bottom: 16px;/*coloca uma distância entre a parte de baixo do fundo e o que estiver em baixo*/
+}
+
+.banner .logo img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.banner .banner-content button {
+    color: #31A8DD;
+    font-size: 15px;
+    font-weight: bold;/*negrito*/
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
+}
+
+#course-content {
+    width: 800px;
+    text-align: center;
+}
+
+#course-content .modules-list {
+    margin: 24px 0;
+}
+
+#course-content .modules-list .module {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+#course-content .modules-list .module span {
+    color: #33A8DB;
+}
+
+#transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url("assets/images/woman-code.png");
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
+}
+
+#transform-world p {
+    font-weight: 900;
+    font-size: 37px;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+#professional-challenges {
+    text-align: center;
+    width: 800px;
+}
+
+#professional-challenges img {
+    margin: 32px 0;
+}
+
+footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+}
+
+footer .dio-logo {
+    width: 300px;
+}
+
+footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;/*tira sublinhado*/
+}
