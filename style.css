@@ -47,8 +47,9 @@ section {
     font-weight: 900;/*largunra da letra*/
     text-transform: uppercase; /*coloca o texto todo em maiúscula*/
     color: transparent;/*deixa a cor do texto transparente para poder aplicar o efeito degradê*/
-    background: linear-gradient(#33A8DB, #1472B7);/*faz um fundo efeito degradê de cima para baixo com duas cores*/
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);/*faz um fundo efeito degradê de cima para baixo com duas cores*/
     background-clip: text;/*faz o fundo degradê ser do tamanho das letras*/
+    -webkit-background-clip: text;
 }
 
 .banner p {
